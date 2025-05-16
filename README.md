@@ -48,11 +48,19 @@ A modern mobile app demonstrating an onboarding flow with permissions, phone log
 
 ```
 ├── app/                  # Main application screens and navigation
-├── assets/              # Static assets (images, fonts, etc.)
+│   ├── _layout.tsx      # Root layout configuration
+│   ├── index.tsx        # Entry point, redirects to permissions
+│   ├── permissions.tsx  # Location and ATT permissions screen
+│   ├── login.tsx        # Phone number login with OTP screen
+│   ├── user-details.tsx # User information collection screen
+│   ├── dashboard.tsx    # Main dashboard after onboarding
+│   ├── providers.tsx    # App-wide providers setup
+│   ├── +not-found.tsx  # 404 error page
+│   └── store/          # Redux store configuration
+│       ├── store.ts    # Redux store setup
+│       └── authSlice.ts # Authentication state management
 ├── components/          # Reusable React components
 ├── constants/           # App constants and configuration
-├── hooks/               # Custom React hooks
-├── scripts/             # Utility scripts
 └── ios/ & android/      # Native platform configurations
 ```
 
