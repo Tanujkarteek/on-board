@@ -34,7 +34,7 @@ export default function LoginScreen() {
   const handleVerifyOtp = () => {
     // Mock OTP verification
     dispatch(login(phoneNumber));
-    router.replace("/dashboard");
+    router.replace("/user-details");
   };
 
   return (
